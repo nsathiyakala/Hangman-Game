@@ -1,0 +1,242 @@
+body{
+    background: url(./images/cityskyline.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+     margin: 0;
+   padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    
+}
+ .container{
+   display: flex;
+   justify-content: center;
+   align-items: last baseline;
+   flex-wrap: wrap;
+   width: 80%;
+   height: auto;
+  
+  
+ }
+ .Hangman-img{
+   width: 500px;
+   height: auto;
+   padding-top: 20px;
+   padding-left: 10px;
+   
+}
+.Hangman-img img{
+  
+    width: 300px;
+    height: 350px; 
+}
+.Hangman-img h2{
+    padding-top: 10px;
+   text-align: center;
+}
+.game-container{
+    width: 500px ;  
+    height: auto; 
+}
+.game-container ul{
+    padding-right: 50px;
+    display: flex;
+    justify-content:center ;
+
+}
+.game-container li{
+ list-style: none;
+ width: 30px;
+ border-bottom: 3px solid white;
+ margin: 10px;
+ font-size: 28px;
+ color:yellow;
+
+ text-transform: uppercase;
+font-weight: bold;
+text-align: center;
+font-family: "Rubik Doodle Shadow";
+}
+.game-container .guessed{
+    border-color: transparent;
+    margin: -40px,0,35px;
+}
+
+.game-container p{
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+.game-container b{
+    color: yellow;
+    font-weight: bold;
+}
+.game-container .lifes b{
+color: crimson;
+font-weight: bold;
+}
+.keyboard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.keyboard button{
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: rgb(7, 106, 99);;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px white;
+}
+.keyboard button:hover{
+    cursor: pointer;
+  
+}
+.keyboard button[disabled]{
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.game-over{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 999;
+
+}
+.game-over .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    max-width: 420px; 
+     width: 100%;
+     padding: 20px;
+     border-radius: 20px; 
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
+}
+
+.game-over button{
+    border-radius: 5px ;
+    border: none;
+    background-color: rgb(106,90,205,0.8);
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.game-over button:hover{
+    background-color: transparent;
+    border: 1px solid rgb(106,90,205,0.8);
+    color:rgb(106,90,205,0.8) ;
+    
+}
+.game-over h2{
+    color: slateblue;
+    font-size: 30px;
+}
+.game-over img{
+    width: 200px;
+    height: 200px;
+}
+.game-over p{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color:  black;
+}
+.game-over p b{
+    color:  rgb(250, 155, 77);
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:1260px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .Hangman-img , .game-container{
+        width: 400px;
+    }  
+}
+
+@media screen and (max-width:950px){
+
+    .Hangman-img , .game-container{
+        width: 500px;
+    }
+    .Hangman-img{
+        margin-bottom:20px;
+        display: flex;
+        justify-content: center;
+    }
+    .Hangman-img img{
+        width: 250px;
+        height: 250px;
+    }
+    
+}
+
+@media screen and (max-width:500px){
+.container{
+    width: 100%;
+}
+.Hangman-img , .game-container{
+    width: 100%;
+}
+.Hangman-img img{
+    width: 200px;
+    height: 250px;
+}
+.game-container{
+    font-size: 12px;
+}
+.keyboard button{
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+}
+.game-container ul{
+    display: flex;
+    justify-content:flex-start ;
+
+}
+.game-container li{
+    font-size: 20px;
+}
+.game-container p{
+    padding: 0;
+    font-size: 17px;
+}
+.game-over {
+    width: 300px;
+}
+.game-over img{
+    width: 150px;
+    height: 150px;
+}
+.game-over h2{
+    font-size: 25px;
+}
+.game-over p{
+    font-size: 17px;
+}
+
+}
