@@ -1,0 +1,43 @@
+body{
+    background-image: url(images/cityskyline.png);
+    background-size:cover; 
+    background-repeat: no-repeat;  
+    margin: 0;
+    padding: 0; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+}
+.container{
+    text-align: center;
+    margin-top: 40px;
+}
+.container img{
+    margin-bottom: 50px;
+}
+.container h1{
+    font-family: "Rubik Bubbles";
+    color: rgb(250, 155, 77);
+    letter-spacing: 5px;
+    font-size: 50px;
+    margin-top: -20px;
+    text-shadow:2px 2px 0 white;
+}
+
+.container button{
+    border: none;
+    font-family: "Rubik Doodle Triangles";
+    margin-top: 20px;
+    height: 50px;
+    font-size: 30px;
+    color: rgb(252, 2, 2);
+    text-shadow:1px 1px 0 white;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+.container button:hover{
+    cursor: pointer;
+    border:1px solid black;
+    border-radius: 5px solid black;
+    background-color: transparent;
+}
